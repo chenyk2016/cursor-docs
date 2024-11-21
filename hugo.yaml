@@ -48,4 +48,4 @@ params:
 
 build:
   env:
-    HUGO_VERSION: "0.139.0"
+    HUGO_VERSION: "0.132.2"
