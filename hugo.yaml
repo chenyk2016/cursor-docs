@@ -1,0 +1,51 @@
+# Hugo configuration file
+title: My Site
+
+# import hextra as module
+module:
+  imports:
+  - path: github.com/imfing/hextra
+
+markup:
+  # allow raw html
+  goldmark:
+    renderer:
+      unsafe: true
+
+  # enable hextra syntax highlight
+  highlight:
+    noClasses: false
+
+menu:
+  main:
+    - name: Cursor
+      pageRef: /cursor
+      weight: 1
+    - name: Prompts入门教程
+      pageRef: /prompts入门教程
+      weight: 2
+    - name: Prompts案例
+      pageRef: /prompts
+      weight: 3
+    
+    - name: Search
+      weight: 4
+      params:
+        type: search
+
+params:
+  navbar:
+    displayTitle: true
+    displayLogo: false
+
+  footer:
+    displayCopyright: false
+    displayPoweredBy: true
+
+  editURL:
+    enable: false
+    # base: "github编辑页面"
+
+build:
+  env:
+    HUGO_VERSION: "0.139.0"
